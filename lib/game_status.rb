@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def won(board)
+def won?(board)
   win = []
   WIN_COMBINATIONS.each {|i|
     if board[i[0]] == "X" && board[i[1]] == "X" && board[i[2]] == "X"
