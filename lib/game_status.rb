@@ -17,6 +17,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
-  board
+  
+  board.select {|i|
+    i == "X"
+  
 
   
