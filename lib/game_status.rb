@@ -17,9 +17,16 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
-  
-  board.select {|i|
-    i == "X"
+  WIN_COMBINATIONS.each {|i|
+    if board[i[0]] == "X" && board[i[1]] == "X" && board[i[2]] == "X"
+      i
+    elsif board[i[0]] == "O" && board[i[1]] == "O" && board[i[2]] == "O"
+      i 
+    else
+      false 
+    end
+  }
+end
   
 
   
