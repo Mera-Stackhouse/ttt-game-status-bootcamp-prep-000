@@ -31,6 +31,12 @@ def won?(board)
     win
   end
 end
+
+def full?(board)
+  if !board.include?("")
+    true 
+  end
+end
   
 
   
