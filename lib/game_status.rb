@@ -26,6 +26,10 @@ def won(board)
     end
   }
   if win.empty?
+    return false 
+  else
+    win
+  end
 end
   
 
