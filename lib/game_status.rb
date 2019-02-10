@@ -20,9 +20,9 @@ def won?(board)
   win = []
   WIN_COMBINATIONS.each {|i|
     if board[i[0]] == "X" && board[i[1]] == "X" && board[i[2]] == "X"
-      win << i[0] , 
+      win.push(i[0], i[1], i[2])
     elsif board[i[0]] == "O" && board[i[1]] == "O" && board[i[2]] == "O"
-      win << i 
+      win.push(i[0], i[1], i[2])
     end
   }
   if win.empty?
